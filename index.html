@@ -1,255 +1,377 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Schuh- und Schlüsselservice am Theater | Freiburg</title>
-<meta name="description" content="Schuh- und Schlüsselservice am Theater in Freiburg im Breisgau — Schuhreparatur, Schlüsselkopien und Express-Service in der Bertoldstraße 43. Über 30 Jahre Erfahrung, 4,9 ★ bei Google. Website-Entwurf.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Schuh- und Schlüsselservice am Theater — Bertoldstraße 43, Freiburg</title>
+<meta name="description" content="Schuh- und Schlüsselservice am Theater, Bertoldstraße 43 in Freiburg: Schlüsselkopien, Schuhreparatur und Express-Service. Welcher Schlüssel sich kopieren lässt und welcher nicht." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2337424d'/%3E%3Ccircle cx='11' cy='16' r='6' fill='none' stroke='%23c79a3c' stroke-width='3'/%3E%3Cpath d='M17 16h11M25 16v5M21 16v4' stroke='%23c79a3c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
 </head>
 <body>
 
-<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<a class="skip-link" href="#main">Direkt zum Inhalt</a>
 
-<header class="site-header">
-  <div class="container">
-    <a class="brand" href="#top">
-      <svg class="brand-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="17" cy="17" r="8" stroke="currentColor" stroke-width="3"/>
-        <circle cx="17" cy="17" r="2.6" fill="currentColor"/>
-        <path d="M22.5 22.5L38 38" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-        <path d="M31 31L35 27" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-        <path d="M35 35L39 31" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Schuh- und Schlüsselservice am Theater — Start">
+      <svg class="brand-mark" viewBox="0 0 44 32" fill="none" aria-hidden="true">
+        <circle cx="11" cy="16" r="7" stroke="currentColor" stroke-width="3.4" />
+        <path d="M18 16h22M36 16v6M30 16v5" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" />
       </svg>
-      <span class="brand-text-full">Schuh- &amp; Schlüsselservice am Theater</span>
+      <span class="brand-text">
+        <span class="brand-name">Schuh- &amp; Schlüsselservice</span>
+        <span class="brand-sub">am Theater · Bertoldstraße 43</span>
+      </span>
     </a>
-    <nav class="main-nav" aria-label="Hauptnavigation">
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="mainNav" aria-label="Hauptnavigation">
       <ul>
-        <li><a href="#ueber-uns">Über uns</a></li>
-        <li><a href="#services">Leistungen</a></li>
+        <li><a href="#schluessel">Schlüssel</a></li>
+        <li><a href="#schuhe">Schuhe</a></li>
+        <li><a href="#express">Express</a></li>
+        <li><a href="#reparierts">Reparieren</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
-        <li><a class="nav-cta" href="#kontakt">Anfragen</a></li>
       </ul>
     </nav>
+
+    <span class="header-status" id="headerStatus" hidden></span>
   </div>
 </header>
 
 <main id="main">
 
   <!-- ================= HERO ================= -->
-  <section class="hero" id="top">
-    <div class="hero-bg-motif" aria-hidden="true">
-      <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="640" cy="90" r="16" stroke="currentColor" stroke-width="6" fill="none"/>
-        <circle cx="640" cy="90" r="5" fill="currentColor"/>
-        <path d="M652 100L740 188" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
-        <path d="M700 148L718 130" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
-        <path d="M718 166L736 148" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
-        <path d="M90 460c10-30 40-46 78-46 22 0 34 10 58 10 30 0 40-18 66-18 34 0 46 24 96 24 40 0 58-14 92-14 26 0 38 8 50 8v36c0 12-10 20-22 20H108c-12 0-20-8-20-20z" stroke="currentColor" stroke-width="5" fill="none"/>
-      </svg>
-    </div>
-    <div class="container">
-      <div class="hero-content">
-        <span class="hero-eyebrow">Einzelhandel &amp; Handwerk · Freiburg im Breisgau</span>
-        <h1>Schlüsseldienst und Schuhreparatur mit Handwerkstradition am Theater</h1>
-        <p class="hero-claim">Ihr Ansprechpartner in der Freiburger Innenstadt für Schlüsselkopien, professionelle Schuhreparatur und schnellen Express-Service — mit über 30 Jahren Erfahrung, persönlich und zuverlässig in Ihrer Nähe.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#kontakt">Jetzt Kontakt aufnehmen</a>
-          <a class="btn btn-secondary" href="#services">Leistungen ansehen</a>
-        </div>
-        <ul class="hero-meta">
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
-            Bertoldstraße 43, Freiburg im Breisgau
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            Mo–Fr 10–18 Uhr · Sa 10–15 Uhr
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.2 1 5.9L12 17l-5.2 2.8 1-5.9-4.3-4.2 5.9-.8L12 3.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="currentColor" fill-opacity="0.15"/></svg>
-            4,9 ★ bei Google (60 Bewertungen)
-          </li>
-        </ul>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-visual-card">
-          <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="keyGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#eef2f3"/>
-                <stop offset="100%" stop-color="#8fa1a8"/>
-              </linearGradient>
-              <linearGradient id="shoeGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#7fb8c9"/>
-                <stop offset="100%" stop-color="#1e4e5f"/>
-              </linearGradient>
-            </defs>
-            <circle cx="72" cy="70" r="30" stroke="url(#keyGrad)" stroke-width="9" fill="none"/>
-            <circle cx="72" cy="70" r="9" fill="url(#keyGrad)"/>
-            <path d="M93 91L162 160" stroke="url(#keyGrad)" stroke-width="9" stroke-linecap="round"/>
-            <path d="M132 130L150 112" stroke="url(#keyGrad)" stroke-width="9" stroke-linecap="round"/>
-            <path d="M150 148L168 130" stroke="url(#keyGrad)" stroke-width="9" stroke-linecap="round"/>
-            <path d="M30 176c6-20 26-30 52-30 15 0 23 7 39 7 20 0 27-12 44-12 23 0 31 16 64 16 8 0 13-2 17-2v22c0 8-7 13-15 13H45c-8 0-15-6-15-13z" fill="url(#shoeGrad)" opacity="0.9"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Bertoldstraße 43 · Freiburger Innenstadt</p>
+        <h1>Zwei Handwerke.<br />Eine Theke.<br /><em>Über 30 Jahre.</em></h1>
+        <p class="hero-lead">
+          Schlüssel und Schuhe haben auf den ersten Blick nichts miteinander zu
+          tun. Auf den zweiten schon: Beides sind Dinge, die man täglich
+          benutzt, bis sie klemmen — und die sich fast immer reparieren lassen,
+          statt sie zu ersetzen.
+        </p>
 
-  <!-- ================= ÜBER UNS ================= -->
-  <section class="about" id="ueber-uns">
-    <div class="container about-grid">
-      <div class="about-text">
-        <span class="section-label">Über uns</span>
-        <h2>Handwerk, auf das man sich verlassen kann</h2>
-        <p>Der Schuh- und Schlüsselservice am Theater steht seit über 30 Jahren für solides Handwerk mitten in Freiburg: Wir kümmern uns um alles, was mit Schuhen und Schlüsseln zu tun hat — von der schnellen Schlüsselkopie bis zur sorgfältigen Reparatur Ihrer Lieblingsschuhe.</p>
-        <p>Als kleiner, inhabergeführter Betrieb legen wir Wert auf persönliche Beratung, saubere Ausführung und kurze Wege für unsere Kundschaft aus der Innenstadt und dem Theaterviertel. Im Rahmen der Freiburger Innenstadt-Initiative „Freiburg repariert's" sind wir als verlässliche Adresse für Reparaturen zu fairen Preisen bekannt.</p>
-        <p>Ob spontane Reparatur oder geplanter Auftrag: Wir nehmen uns Zeit für Ihr Anliegen und arbeiten mit Sorgfalt an jedem Stück, das bei uns über die Theke geht.</p>
+        <div class="status-badge" id="statusBadge" hidden>
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="statusText"></span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#schluessel">Welchen Schlüssel kann man kopieren?</a>
+          <a class="btn btn-outline" href="tel:+4976121439953">0761 21439953</a>
+        </div>
       </div>
-      <div class="about-visual" aria-hidden="true">
-        <svg viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="aboutRing" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#35839a"/>
-              <stop offset="100%" stop-color="#0f2c35"/>
-            </linearGradient>
-          </defs>
-          <circle cx="130" cy="130" r="120" fill="#eef2f3"/>
-          <circle cx="130" cy="130" r="120" fill="none" stroke="url(#aboutRing)" stroke-width="3" stroke-dasharray="4 8"/>
-          <circle cx="105" cy="95" r="34" stroke="#163b47" stroke-width="10" fill="none"/>
-          <circle cx="105" cy="95" r="10" fill="#163b47"/>
-          <path d="M130 120L205 195" stroke="#163b47" stroke-width="10" stroke-linecap="round"/>
-          <path d="M170 160L192 138" stroke="#163b47" stroke-width="10" stroke-linecap="round"/>
-          <path d="M192 182L214 160" stroke="#163b47" stroke-width="10" stroke-linecap="round"/>
-          <path d="M45 205c8-24 32-36 62-36 18 0 27 8 46 8 24 0 33-14 53-14 27 0 37 19 76 19v26c0 10-8 17-18 17H63c-10 0-18-8-18-17z" fill="#45879a"/>
+
+      <!-- Schlüsselrohling in der Fräse. -->
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 360 260" fill="none">
+          <rect width="360" height="260" fill="#2b343d" />
+          <g stroke="#3f4a55" stroke-width="2"><path d="M0 60h360M0 130h360M0 200h360M90 0v260M180 0v260M270 0v260" /></g>
+
+          <!-- Maschinenbett -->
+          <rect x="24" y="168" width="312" height="26" rx="5" fill="#4c5763" />
+          <rect x="24" y="160" width="312" height="10" rx="5" fill="#5d6874" />
+
+          <!-- Original links -->
+          <g transform="translate(64,112)">
+            <circle cx="16" cy="24" r="16" fill="none" stroke="#aeb7bf" stroke-width="7" />
+            <path d="M32 24h62" stroke="#aeb7bf" stroke-width="10" stroke-linecap="round" />
+            <path d="M56 29v10M70 29v8M84 29v11" stroke="#aeb7bf" stroke-width="7" stroke-linecap="round" />
+          </g>
+
+          <!-- Rohling rechts, wird gefräst -->
+          <g transform="translate(212,112)">
+            <circle cx="16" cy="24" r="16" fill="none" stroke="#c79a3c" stroke-width="7" />
+            <path d="M32 24h62" stroke="#c79a3c" stroke-width="10" stroke-linecap="round" />
+            <path d="M56 29v10M70 29v8" stroke="#c79a3c" stroke-width="7" stroke-linecap="round" />
+          </g>
+
+          <!-- Fräser -->
+          <g transform="translate(300,44)">
+            <rect x="-9" width="18" height="66" rx="4" fill="#8d959d" />
+            <path d="M-14 66h28l-6 18h-16z" fill="#aeb7bf" />
+            <circle cy="90" r="8" fill="#e07b2c" />
+          </g>
+          <!-- Späne -->
+          <g fill="#c79a3c" opacity=".7">
+            <circle cx="296" cy="118" r="3" /><circle cx="312" cy="128" r="2.4" />
+            <circle cx="286" cy="132" r="2.6" /><circle cx="320" cy="112" r="2" />
+          </g>
+
+          <!-- Schuh auf der Ablage -->
+          <g transform="translate(40,196)">
+            <path d="M2 34c4-2 6-18 12-18s5 5 11 8 12 2 12 6v4z" fill="#8d959d" />
+            <path d="M0 40h42" stroke="#5d6874" stroke-width="5" stroke-linecap="round" />
+          </g>
         </svg>
       </div>
     </div>
   </section>
 
-  <!-- ================= SERVICES ================= -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-heading">
-        <span class="section-label">Leistungen</span>
-        <h2>Unsere Schwerpunkte</h2>
-        <p>Von der schnellen Kopie bis zur handwerklichen Reparatur — hier finden Sie die zentralen Leistungen unseres Betriebs im Überblick.</p>
+  <!-- Kennzahlen -->
+  <div class="figures">
+    <div class="wrap">
+      <div><strong>30+</strong><span>Jahre in der Bertoldstraße</span></div>
+      <div><strong>4,9 ★</strong><span>aus 60 Google-Bewertungen</span></div>
+      <div><strong>Express</strong><span>vieles am selben Tag fertig</span></div>
+      <div><strong>Mo – Sa</strong><span>10 bis 18, samstags bis 15 Uhr</span></div>
+    </div>
+  </div>
+
+  <!-- ================= SCHLÜSSEL =================
+       Die eigentliche Frage an der Theke ist nicht "was kostet eine
+       Kopie", sondern "geht das überhaupt". Bei Schlüsseln hängt die
+       Antwort am Typ — und das weiß außerhalb der Branche kaum jemand. -->
+  <section class="section keys" id="schluessel">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Schlüsseldienst</p>
+        <h2>Welchen Schlüssel kann man kopieren?</h2>
+        <p class="section-note">
+          Nicht jeden — und das liegt nicht am Werkzeug, sondern am Schlüssel.
+          Vier Typen, vier Antworten. Im Zweifel: mitbringen und zeigen, das
+          klärt sich in zehn Sekunden.
+        </p>
       </div>
-      <div class="services-grid">
 
-        <article class="service-card">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 18c1-3 5-4.5 9-4.5 3 0 4.5 1.5 7 1.5 2 0 3-1 4-1v3.5c0 1.4-1.1 2.5-2.5 2.5H5.5C4.1 20 3 18.9 3 17.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-              <path d="M6 13.5V9c0-1.7 1.3-3 3-3h1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <div class="key-grid">
+        <article class="key-card is-yes">
+          <span class="k-verdict">Sofort</span>
+          <div class="k-shape" aria-hidden="true">
+            <svg viewBox="0 0 140 46" fill="none">
+              <circle cx="18" cy="23" r="13" stroke="currentColor" stroke-width="5" />
+              <path d="M31 23h96" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+              <path d="M84 27v9M100 27v7M116 27v10" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
             </svg>
           </div>
-          <h3>Schuhreparatur</h3>
-          <p>Nähen, Sohlen kleben sowie Erneuerung von Sohlen und Absätzen — für Herren-, Damen-, Business- und Tanzschuhe fachgerecht instand gesetzt.</p>
+          <h3>Zackenschlüssel</h3>
+          <p>Der klassische Haus-, Zimmer- oder Briefkastenschlüssel mit gezacktem Bart. Wird vor Ort gefräst, meistens während Sie warten.</p>
         </article>
 
-        <article class="service-card">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="8" cy="8" r="4.2" stroke="currentColor" stroke-width="1.8"/>
-              <path d="M11 11l9 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M16.5 16.5l2.5-2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M19 19l2.5-2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <article class="key-card is-yes">
+          <span class="k-verdict">Meistens</span>
+          <div class="k-shape" aria-hidden="true">
+            <svg viewBox="0 0 140 46" fill="none">
+              <circle cx="18" cy="23" r="13" stroke="currentColor" stroke-width="5" />
+              <path d="M31 23h96" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
+              <path d="M56 23c14-6 26 6 40 0s24 6 32 2" stroke="currentColor" stroke-width="3" fill="none" />
             </svg>
           </div>
-          <h3>Schlüsselkopien</h3>
-          <p>Haus-, Zimmer-, Tresor-, Auto- und Briefkastenschlüssel werden direkt vor Ort zuverlässig und präzise für Sie angefertigt.</p>
+          <h3>Wendeschlüssel</h3>
+          <p>Flach, mit Bohrungen oder Fräsbahnen auf beiden Seiten, passt in beide Richtungen. Geht in der Regel — vorausgesetzt, der passende Rohling ist verfügbar.</p>
         </article>
 
-        <article class="service-card">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
-              <path d="M12 7.5v4.8l3.2 1.9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <article class="key-card is-maybe">
+          <span class="k-verdict">Nur mit Karte</span>
+          <div class="k-shape" aria-hidden="true">
+            <svg viewBox="0 0 140 46" fill="none">
+              <circle cx="18" cy="23" r="13" stroke="currentColor" stroke-width="5" />
+              <path d="M31 23h96" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
+              <rect x="94" y="6" width="34" height="24" rx="4" fill="currentColor" opacity=".35" />
+              <path d="M100 12h22M100 18h22M100 24h14" stroke="currentColor" stroke-width="2.4" />
             </svg>
           </div>
-          <h3>Express-Service</h3>
-          <p>Für eilige Anliegen bieten wir eine bevorzugte, schnelle Bearbeitung an — viele Reparaturen sind noch am selben Tag erledigt.</p>
+          <h3>Sicherheitsschlüssel</h3>
+          <p>Patentgeschützt, mit Sicherungskarte ausgeliefert. Ohne diese Karte darf ihn niemand nachmachen — auch wir nicht. Mit Karte ist es eine Bestellung, keine Sache von Minuten.</p>
         </article>
 
-        <article class="service-card">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12c2-4 6-6 8-6s6 2 8 6c-2 4-6 6-8 6s-6-2-8-6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-              <circle cx="12" cy="12" r="2.3" stroke="currentColor" stroke-width="1.8"/>
+        <article class="key-card is-no">
+          <span class="k-verdict">Nur der Rohling</span>
+          <div class="k-shape" aria-hidden="true">
+            <svg viewBox="0 0 140 46" fill="none">
+              <rect x="6" y="8" width="40" height="30" rx="7" stroke="currentColor" stroke-width="5" />
+              <circle cx="26" cy="23" r="5" fill="currentColor" />
+              <path d="M46 23h82" stroke="currentColor" stroke-width="9" stroke-linecap="round" />
+              <path d="M96 27v8M112 27v8" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
             </svg>
           </div>
-          <h3>Persönliche Beratung</h3>
-          <p>Wir nehmen uns Zeit, Ihr Anliegen zu verstehen, und empfehlen die passende Lösung für Schuh oder Schlüssel.</p>
+          <h3>Autoschlüssel mit Chip</h3>
+          <p>Das mechanische Teil lässt sich schneiden. Der Transponder im Griff muss beim Fahrzeug angelernt werden — das kann eine Werkstatt, nicht der Schlüsseldienst.</p>
         </article>
+      </div>
 
+      <p class="keys-note">
+        Auch dabei: Tresor- und Zimmerschlüssel. Alles wird direkt vor Ort
+        angefertigt, nicht weggeschickt.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= SCHUHE ================= -->
+  <section class="section shoes" id="schuhe">
+    <div class="wrap shoes-grid">
+      <div>
+        <p class="kicker">Schuhreparatur</p>
+        <h2>Was an einem Schuh wieder gut wird</h2>
+        <p>
+          Nähen, kleben, neu besohlen, Absätze erneuern — für Herren-, Damen-,
+          Business- und Tanzschuhe. Der häufigste Auftrag ist der billigste:
+          ein abgelaufener Absatz.
+        </p>
+        <p>
+          Wer damit zu lange wartet, bezahlt später mehr, weil dann die
+          Fersenkappe mit dran glauben muss. Zwei Millimeter zu spät kosten
+          das Zehnfache.
+        </p>
+      </div>
+
+      <ul class="shoe-list">
+        <li><span class="sl-name">Absätze erneuern</span><span class="sl-note">der schnellste und günstigste Auftrag</span></li>
+        <li><span class="sl-name">Sohlen erneuern</span><span class="sl-note">Leder oder Gummi, je nach Schuh</span></li>
+        <li><span class="sl-name">Sohlen kleben</span><span class="sl-note">wenn sich die Verklebung gelöst hat</span></li>
+        <li><span class="sl-name">Nähte reparieren</span><span class="sl-note">aufgegangene Nähte, Riemen, Laschen</span></li>
+        <li><span class="sl-name">Tanzschuhe</span><span class="sl-note">eigene Sohlenarten, eigene Ansprüche</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= EXPRESS ================= -->
+  <section class="section express" id="express">
+    <div class="wrap express-inner">
+      <div>
+        <p class="kicker">Wenn es eilt</p>
+        <h2>Express: vieles noch am selben Tag</h2>
+        <p>
+          Der Schlüssel ist abgebrochen, die Sohle löst sich vor dem Termin
+          morgen früh, der Absatz bleibt im Gitterrost stecken — für eilige
+          Anliegen gibt es die bevorzugte Bearbeitung. Viele Reparaturen sind
+          dann noch am selben Tag fertig.
+        </p>
+        <p>
+          Sagen Sie es beim Abgeben. Ob es heute noch geht, hängt davon ab, was
+          schon auf der Werkbank liegt — und das weiß nur, wer dahintersteht.
+        </p>
+      </div>
+
+      <ul class="express-cases">
+        <li><span aria-hidden="true">⚡</span><div><h3>Schlüssel abgebrochen</h3><p>Kopie vom zweiten Schlüssel, sofern einer da ist.</p></div></li>
+        <li><span aria-hidden="true">⚡</span><div><h3>Sohle löst sich</h3><p>Kleben hält, wenn es rechtzeitig gemacht wird.</p></div></li>
+        <li><span aria-hidden="true">⚡</span><div><h3>Absatz abgerissen</h3><p>Klassiker vor jedem Anlass. Geht meist schnell.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= FREIBURG REPARIERT'S ================= -->
+  <section class="section repair" id="reparierts">
+    <div class="wrap repair-grid">
+      <figure class="repair-badge" aria-hidden="true">
+        <svg viewBox="0 0 240 240" fill="none">
+          <circle cx="120" cy="120" r="112" fill="none" stroke="#c79a3c" stroke-width="4" stroke-dasharray="10 8" />
+          <circle cx="120" cy="120" r="94" fill="#2b343d" />
+          <!-- Kreislaufpfeile -->
+          <path d="M120 46a74 74 0 0 1 64 37" stroke="#c79a3c" stroke-width="7" fill="none" stroke-linecap="round" />
+          <path d="M176 76l16 12-20 8z" fill="#c79a3c" />
+          <path d="M184 157a74 74 0 0 1-128 0" stroke="#aeb7bf" stroke-width="7" fill="none" stroke-linecap="round" />
+          <path d="M62 172l-14-14 22-4z" fill="#aeb7bf" />
+          <!-- Werkzeug in der Mitte -->
+          <g transform="translate(120,120)">
+            <circle cx="-22" r="11" stroke="#f2f3f1" stroke-width="4" fill="none" />
+            <path d="M-11 0h34M14 0v10M2 0v8" stroke="#f2f3f1" stroke-width="5" stroke-linecap="round" />
+          </g>
+        </svg>
+      </figure>
+
+      <div>
+        <p class="kicker">Freiburg repariert's</p>
+        <h2>Reparieren ist die ältere Idee</h2>
+        <p>
+          Der Betrieb ist Teil der Freiburger Innenstadt-Initiative
+          <strong>„Freiburg repariert's"</strong> — und darin als verlässliche
+          Adresse für Reparaturen zu fairen Preisen gelistet.
+        </p>
+        <p>
+          Das ist keine Haltung, die man sich neuerdings zulegt. Ein Absatz
+          kostet einen Bruchteil eines neuen Paars, und ein Schlüssel, der
+          wieder schließt, spart einen Schließzylinder. Beides war schon immer
+          so — nur wird es gerade wieder besprochen.
+        </p>
+        <p>
+          Kleiner, inhabergeführter Betrieb: Wer hier abgibt, spricht mit der
+          Person, die die Arbeit auch macht.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- ================= KONTAKT ================= -->
-  <section class="contact" id="kontakt">
-    <div class="container">
-      <div class="section-heading">
-        <span class="section-label">Standort &amp; Kontakt</span>
-        <h2>So erreichen Sie uns</h2>
-        <p>Mitten in Freiburg, in der Nähe des Theaters — kommen Sie vorbei oder schreiben Sie uns Ihr Anliegen.</p>
-      </div>
-      <div class="contact-grid">
+  <section class="section contact" id="kontakt">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="kicker">Vorbeikommen</p>
+        <h2>Bertoldstraße 43</h2>
+        <p class="section-note">
+          Mitten in der Innenstadt, in der Nähe des Theaters. Kurze Wege für
+          alle, die ohnehin in der Stadt zu tun haben.
+        </p>
 
-        <div class="contact-card">
-          <h3>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
-            Adresse
-          </h3>
-          <address class="contact-address">
-            Schuh- und Schlüsselservice am Theater<br>
-            Bertoldstraße 43<br>
-            79098 Freiburg im Breisgau
-          </address>
-
-          <h3>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            Öffnungszeiten
-          </h3>
-          <ul class="contact-hours">
-            <li><span>Mo – Fr</span><span>10:00 – 18:00</span></li>
-            <li><span>Sa</span><span>10:00 – 15:00</span></li>
-            <li><span>So</span><span>Geschlossen</span></li>
-          </ul>
-          <p class="contact-note">Angaben laut Online-Branchenverzeichnissen (u. a. Google, 11880) — Änderungen vorbehalten.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="tel:+4976121439953">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4.5c.6-.6 1.6-.6 2.2 0l1.6 1.6c.5.5.6 1.3.2 1.9l-1 1.5c-.3.4-.3.9 0 1.3 1 1.4 2.3 2.7 3.7 3.7.4.3.9.3 1.3 0l1.5-1c.6-.4 1.4-.3 1.9.2l1.6 1.6c.6.6.6 1.6 0 2.2l-1 1c-.7.7-1.8 1-2.8.7-3-.9-5.7-2.6-7.9-4.8-2.2-2.2-3.9-4.9-4.8-7.9-.3-1 0-2.1.7-2.8l1-1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span><strong>0761 21439953</strong><span>Nummer laut Online-Branchenverzeichnissen</span></span>
+          </a>
+          <a class="contact-link" href="https://www.google.com/maps/search/?api=1&amp;query=Bertoldstra%C3%9Fe%2043%2C%2079098%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21c-5-5-8-8.6-8-12a8 8 0 0 1 16 0c0 3.4-3 7-8 12Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span><strong>Bertoldstraße 43</strong><span>79098 Freiburg im Breisgau · Route planen</span></span>
+          </a>
         </div>
 
-        <div class="contact-card">
-          <h3>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Anfrage senden
-          </h3>
-          <p>Rufen Sie uns direkt an oder schreiben Sie uns Ihr Anliegen per E-Mail. Oder planen Sie Ihren Besuch direkt über die Wegbeschreibung.</p>
-          <div class="contact-actions">
-            <a class="btn btn-ghost" href="tel:+4976121439953">Anrufen: 0761 21439953</a>
-            <a class="btn btn-ghost" href="mailto:info@schuh-schluessel-theater.de">E-Mail an info@schuh-schluessel-theater.de</a>
-            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Bertoldstra%C3%9Fe+43%2C+79098+Freiburg+im+Breisgau" target="_blank" rel="noopener">Route in Google Maps öffnen</a>
-          </div>
-          <p class="contact-note">Telefonnummer laut Online-Branchenverzeichnissen. E-Mail-Adresse ist ein Platzhalter für den Entwurf — wird vor Veröffentlichung durch die echte Adresse ersetzt.</p>
-        </div>
-
+        <p class="todo-note">
+          <strong>Vor dem Launch:</strong> eine echte E-Mail-Adresse ergänzen.
+          Die bisher gezeigte war ein Platzhalter und ist entfernt.
+        </p>
       </div>
+
+      <aside class="hours-card">
+        <h3>Öffnungszeiten</h3>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span>Montag</span><em>10:00 – 18:00</em></li>
+          <li data-day="2"><span>Dienstag</span><em>10:00 – 18:00</em></li>
+          <li data-day="3"><span>Mittwoch</span><em>10:00 – 18:00</em></li>
+          <li data-day="4"><span>Donnerstag</span><em>10:00 – 18:00</em></li>
+          <li data-day="5"><span>Freitag</span><em>10:00 – 18:00</em></li>
+          <li data-day="6"><span>Samstag</span><em>10:00 – 15:00</em></li>
+          <li data-day="0" class="is-closed"><span>Sonntag</span><em>geschlossen</em></li>
+        </ul>
+        <p class="hours-note">
+          Angaben laut Online-Branchenverzeichnissen (u.&nbsp;a. Google, 11880),
+          Änderungen vorbehalten. Für Express-Aufträge lohnt sich der Anruf
+          vorher.
+        </p>
+      </aside>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <span>© 2026 Schuh- und Schlüsselservice am Theater · Freiburg im Breisgau</span>
-    <span class="footer-draft-note">Dies ist ein unverbindlicher Website-Entwurf.</span>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">Schuh- und Schlüsselservice am Theater</span>
+      <p>Bertoldstraße 43 · 79098 Freiburg im Breisgau<br />Schlüsselkopien, Schuhreparatur, Express — seit über 30 Jahren.</p>
+    </div>
+    <nav class="footer-links" aria-label="Fußzeile">
+      <a href="#schluessel">Schlüssel</a>
+      <a href="#schuhe">Schuhe</a>
+      <a href="#express">Express</a>
+      <a href="tel:+4976121439953">0761 21439953</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="year">2026</span> Schuh- und Schlüsselservice am Theater</span>
+    <span class="footer-note">Unverbindlicher Website-Entwurf, keine offizielle Seite des Betriebs. Angaben aus Online-Branchenverzeichnissen; Impressum und Datenschutzerklärung fehlen und sind vor einem echten Launch Pflicht.</span>
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
